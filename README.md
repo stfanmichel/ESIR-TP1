@@ -33,7 +33,11 @@ Lien utiles :
     
    Paramétrer son .gitignore à la racine du projet avec le site http://gitignore.io
    
-   - Initialisation ESLINT
+   - Installation du module nodemon
+     
+    npm i --save-dev nodemon
+    
+   - Installation et initialisation du module ESLINT
    
     npm i --save-dev eslint
     eslint --init
