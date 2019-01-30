@@ -11,12 +11,11 @@ let nbRequest = 0
 const server = http.createServer((req, res) => {
     nbRequest++;
 
-    // On attend 1 seconde avant de répondre
-    const waitTill = new Date(new Date().getTime() + 2 * 1000);
-    while (waitTill > new Date()) {}
-
-    res.writeHead(200, {"Content-Type": "application/json"})
-    res.end(JSON.stringify({message: 'Hello World !', nbRequest}))
+    // On attend 2 secondes avant de répondre
+    setTimeout(() => {
+        res.writeHead(200, {"Content-Type": "application/json"})
+        res.end(JSON.stringify({message: 'Hello World !', nbRequest}))
+    }, 2000)
 })
 
 // Listen on port 8000, IP defaults to 127.0.0.1
