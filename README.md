@@ -81,10 +81,38 @@ Lien utiles :
     Tester l'appli avec la commande :
     
         node index.js
+    
+    Dans package.json, ajouter le script (element scripts) :
+    
+        "start": "nodemon index.js",
+    
+    Tester l'appli avec la commande :
+    
+        npm start
+  
 
   - Version Web
  
-   Nous allons créer notre premier service web REST. L'idée est de se familiariser avec l'outillage de debug.
+   Nous allons créer un serveur Web node qui retourne une page "Hello World". L'idée est de se familiariser avec l'outillage de debug.
+   
+   Pour cela nous allons utiliser le module http (module présent par défaut, pas besoin de l'installer). Voir la doc du module http ici : https://nodejs.org/dist/latest-v10.x/docs/api/
+   
+   - Instantiation d'un serveur : Instancier un serveur sur le modèle ci-dessous et coder un retour au format JSON à l'aide du paramètre "res" (voir https://nodejs.org/dist/latest-v10.x/docs/api/http.html#http_class_http_serverresponse pour la doc). 
+   
+    const http = require('http') 
+    const server = http.createServer((req, res) => {
+    // TODO
+    })
+    server.listen(8000) // Port d'écoute
+ 
+ On prendra soit de positionner le conten-type du header de la réponse à "application/json" afin de que le navigateur interprète la réponse comme du JSON.
+ 
+   - Debug avec Visual Studio
+   
+   Placer un point d'arrêt dans le source.
+   Dans le menu debug (Ctrl+Shift+D) lancer le debug en ayant pris soin de créer une configuration de lancement (si elle n'existe pas par défaut).
+   Effectuez des appels à votre serveur depuis un navigateur et familiarisez-vous avec le debugger.
+   
    
     
  
