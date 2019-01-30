@@ -107,12 +107,45 @@ Lien utiles :
  
  On prendra soit de positionner le content-type du header de la réponse à "application/json" afin de que le navigateur interprète la réponse comme du JSON. La méthode JSON.stringify() pourra également être utile...
  
+ Tester le serveur avec un navigateur.
+ 
+ Tester le serveur avec curl (https://slides.com/stephmichel/deck-4#/7) 
+ 
+    curl -i http://localhost:8000/
+
+ Examiner la réponse, en particulier le header.
+
+   - Debug avec DevTools (Chrome)
+   
+   Lancer le serveur avec la commande 
+   
+    node --inspect index.js
+   
+   Dans chrome ouvrit l'URL
+    
+     chrome://inspect
+   
+   Il doit trouver et afficher votre serveur. 
+   
+   Ouvrir chrome-devtools en cliquant sur "inspect".
+   
+   Dans l'onglet "Sources->FileSystem" ajoutez le répertoire racine de votre projet (s'il n'y est pas déjà).
+   
+   Effectuez des appels à votre serveur depuis un navigateur et familiarisez-vous avec le debugger.
+   
    - Debug avec Visual Studio
    
    Placer un point d'arrêt dans le source.
    Dans le menu debug (Ctrl+Shift+D) lancer le debug en ayant pris soin de créer une configuration de lancement (si elle n'existe pas par défaut).
    Effectuez des appels à votre serveur depuis un navigateur et familiarisez-vous avec le debugger.
    
+   - Test de performance avec ab
    
-    
+   Ajouter dans le retour JSON de votre serveur le nombre de requêtes réalisées. 
+   Supprimer les points d'arrêt dans le source. Et lancer ab avec 100 client simultanés et 20 requêtes max en parallèle :
+   
+     ab -c 100 -n 20 http://localhost:8000/
+     
+   Faite varier le nombre max de requêtes simultanées (-c ...) et examiner l'évolution des temps de réponse.
+
  
