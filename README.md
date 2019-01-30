@@ -105,7 +105,7 @@ Lien utiles :
     })
     server.listen(8000) // Port d'écoute
  
- On prendra soit de positionner le conten-type du header de la réponse à "application/json" afin de que le navigateur interprète la réponse comme du JSON.
+ On prendra soit de positionner le content-type du header de la réponse à "application/json" afin de que le navigateur interprète la réponse comme du JSON. La méthode JSON.stringify() pourra également être utile...
  
    - Debug avec Visual Studio
    
