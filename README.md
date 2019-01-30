@@ -148,4 +148,24 @@ Lien utiles :
      
    Faite varier le nombre max de requêtes simultanées (-c ...) et examiner l'évolution des temps de réponse.
 
+
+ # Allons un peu plus loin 
  
+  Nous allons remuer un peu node pour en comprendre une des caractéristique à la base de ses bonnes performances, mais qui doit être bien comprise si on ne veut de bons temps de réponses.
+  
+  Ajouter dans votre serveur un délai d'attente synchrone pour simuler un traitement long (pas avec un setTimeout() quoi sinon on ne verra rien) 
+ 
+ Par exemple avec le code suivant avant de faire le res.end() :
+ 
+    const waitTill = new Date(new Date().getTime() + 2 * 1000);
+    while (waitTill > new Date()) {}
+ 
+A l'aide de ab faite des tests de performance avec des clients simultanés. Examiner l'évolution des temps de réponses avec l'augmentation du nombre de client.
+
+Comment pouvez-vous interpréter ces résultats ?
+
+Remplacer maintenant votre code d'attende par un code d'attente asynchroneen utilisant par exemple la fonction setTimeout().
+
+A l'aide de ab faite des tests de performance avec des clients simultanés. Examiner l'évolution des temps de réponses avec l'augmentation du nombre de client.
+
+Comment pouvez-vous interpréter ces résultats ?
