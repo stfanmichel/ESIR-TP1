@@ -20,16 +20,24 @@ Lien utiles :
   - Ecmascript : https://slides.com/stephmichel/ecmascript#/
   
   - Node.js : https://slides.com/stephmichel/node-js#/
-  
+ 
+ 
+Pour le bon déroulement du TP et pour vous familiariser avec GIT, lorsque vous liser une ligne du genre (Tag: BLA-BLA-BLA), c'est qu'il est temps de commiter vos modifications afin de pouvoir revenir à ce niveau de code plus tard si besoin. 
+Ceci vous permettra également de vous y retrouver lorsque le correctif vous sera fourni.
+ 
  
  # Initialisation d'un projet
    - initialisation d'un projet node avec npm
    
     npm init
     
+   Examiner le fichier package.json nouvellement créé à la racine de votre projet.
+    
    - Initialisation GIT
    
     git init
+    
+   Examiner le répertoire .git nouvellement créé à la racine de votre projet.
     
    Paramétrer son .gitignore à la racine du projet avec le site http://gitignore.io
    
@@ -61,6 +69,8 @@ Lien utiles :
         
     code .
     
+   (tag: TP1-ESIR-INIT)
+    
 # Ajout de modules au projet
 
     npm i --save mon-module
@@ -90,6 +100,7 @@ Lien utiles :
     
         npm start
   
+  (tag: TP1-ESIR-HELLO-WORLD-CONSOLE)
 
   - Version Web
  
@@ -106,6 +117,8 @@ Lien utiles :
     server.listen(8000) // Port d'écoute
  
  On prendra soit de positionner le content-type du header de la réponse à "application/json" afin de que le navigateur interprète la réponse comme du JSON. La méthode JSON.stringify() pourra également être utile...
+ 
+ (Tag: TP1-ESIR-HELLO-WORLD-WEB)
  
  Tester le serveur avec un navigateur.
  
@@ -142,6 +155,9 @@ Lien utiles :
    - Test de performance avec ab
    
    Ajouter dans le retour JSON de votre serveur le nombre de requêtes réalisées. 
+   
+   (Tag: TP1-ESIR-HELLO-WORLD-AVEC-COMPTAGE-REQUETE)
+   
    Supprimer les points d'arrêt dans le source. Et lancer ab avec 100 client simultanés et 20 requêtes max en parallèle :
    
      ab -c 100 -n 20 http://localhost:8000/
@@ -164,8 +180,27 @@ A l'aide de ab faite des tests de performance avec des clients simultanés. Exam
 
 Comment pouvez-vous interpréter ces résultats ?
 
+(Tag: TP1-ESIR-HELLO-WORLD-ATTENTE-SYNCHRONE)
+
 Remplacer maintenant votre code d'attende par un code d'attente asynchroneen utilisant par exemple la fonction setTimeout().
 
 A l'aide de ab faite des tests de performance avec des clients simultanés. Examiner l'évolution des temps de réponses avec l'augmentation du nombre de client.
 
 Comment pouvez-vous interpréter ces résultats ?
+
+(Tag: TP1-ESIR-HELLO-WORLD-ATTENTE-SETTIMEOUT)
+
+ # Bonus pour les rapides
+  
+  Repartir de la version de l'appli avant l'ajout des temporisations (Tag: TP1-ESIR-HELLO-WORLD-WEB).
+  
+  - Module debug (https://slides.com/stephmichel/node-js#/12/4)
+  
+    Installer et utiliser le module debug afin d'ajouter dans votre application des traces.
+    
+  - Module Winston (https://slides.com/stephmichel/node-js#/9/8)
+  
+    Installer et utiliser le module debug afin d'ajouter dans votre application des traces.
+    
+  - Module Colors (https://www.npmjs.com/package/colors) pour faire de jolis messages dans la console
+ 
