@@ -1,0 +1,24 @@
+{
+  "name": "esir-tp1",
+  "version": "1.0.0",
+  "description": "TP1 ESIR",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stfanmichel/ESIR-TP1.git"
+  },
+  "author": "Stéphane Michel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stfanmichel/ESIR-TP1/issues"
+  },
+  "homepage": "https://github.com/stfanmichel/ESIR-TP1#readme",
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "nodemon": "^1.18.9"
+  }
+}
