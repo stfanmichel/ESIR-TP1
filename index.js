@@ -10,6 +10,11 @@ let nbRequest = 0
 // Configure our HTTP server to respond with Hello World to all requests.
 const server = http.createServer((req, res) => {
     nbRequest++;
+
+    // On attend 1 seconde avant de répondre
+    const waitTill = new Date(new Date().getTime() + 2 * 1000);
+    while (waitTill > new Date()) {}
+
     res.writeHead(200, {"Content-Type": "application/json"})
     res.end(JSON.stringify({message: 'Hello World !', nbRequest}))
 })
