@@ -69,7 +69,7 @@ Ceci vous permettra également de vous y retrouver lorsque le correctif vous ser
         
     code .
     
-   (tag: TP1-ESIR-INIT)
+   (tag: **TP1-ESIR-INIT**)
     
 # Ajout de modules au projet
 
@@ -100,7 +100,7 @@ Ceci vous permettra également de vous y retrouver lorsque le correctif vous ser
     
         npm start
   
-  (tag: TP1-ESIR-HELLO-WORLD-CONSOLE)
+  (tag: **TP1-ESIR-HELLO-WORLD-CONSOLE**)
 
   - Version Web
  
@@ -118,7 +118,7 @@ Ceci vous permettra également de vous y retrouver lorsque le correctif vous ser
  
  On prendra soit de positionner le content-type du header de la réponse à "application/json" afin de que le navigateur interprète la réponse comme du JSON. La méthode JSON.stringify() pourra également être utile...
  
- (Tag: TP1-ESIR-HELLO-WORLD-WEB)
+ (Tag: **TP1-ESIR-HELLO-WORLD-WEB**)
  
  Tester le serveur avec un navigateur.
  
@@ -180,7 +180,7 @@ A l'aide de ab faite des tests de performance avec des clients simultanés. Exam
 
 Comment pouvez-vous interpréter ces résultats ?
 
-(Tag: TP1-ESIR-HELLO-WORLD-ATTENTE-SYNCHRONE)
+(Tag: **TP1-ESIR-HELLO-WORLD-ATTENTE-SYNCHRONE**)
 
 Remplacer maintenant votre code d'attende par un code d'attente asynchroneen utilisant par exemple la fonction setTimeout().
 
@@ -188,11 +188,11 @@ A l'aide de ab faite des tests de performance avec des clients simultanés. Exam
 
 Comment pouvez-vous interpréter ces résultats ?
 
-(Tag: TP1-ESIR-HELLO-WORLD-ATTENTE-SETTIMEOUT)
+(Tag: **TP1-ESIR-HELLO-WORLD-ATTENTE-SETTIMEOUT**)
 
  # Bonus pour les rapides
   
-  Repartir de la version de l'appli avant l'ajout des temporisations (Tag: TP1-ESIR-HELLO-WORLD-WEB).
+  Repartir de la version de l'appli avant l'ajout des temporisations (Tag: **TP1-ESIR-HELLO-WORLD-WEB**).
   
   - Module debug (https://slides.com/stephmichel/node-js#/12/4)
   
@@ -200,7 +200,7 @@ Comment pouvez-vous interpréter ces résultats ?
     
   - Module Winston (https://slides.com/stephmichel/node-js#/9/8)
   
-    Installer et utiliser le module debug afin d'ajouter dans votre application des traces.
+    Installer et utiliser le winston afin d'ajouter dans votre application des traces qui sont stockées dans un fichier de log.
     
   - Module Colors (https://www.npmjs.com/package/colors) pour faire de jolis messages dans la console
  
