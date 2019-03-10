@@ -1,11 +1,11 @@
 # ESIR-TP1 - Prise en main
 
-Objectifs :
+## Objectifs :
   - Prise en main des outils, savoir initier un projet node, le lancer, le debugger. 
   - Savoir chercher puis ajouter des modules à un projet. 
   - Savoir gérer ses sources avec GIT
 
-Sujets abordés :
+## Sujets abordés :
  - initialisation d'un projet (npm, git)
  - manipulation et configuration de modules  
      - debug, winston
@@ -13,7 +13,7 @@ Sujets abordés :
  - premier service avec module http
  - test de perf avec ab : mise en évidence importance de l'asynchronisme avec node.js
  
-Lien utiles :
+## Lien utiles :
 
   - Outillage (npm, node, git, ab, postman etc.) : https://slides.com/stephmichel/deck-4#/
   
