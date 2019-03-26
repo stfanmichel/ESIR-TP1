@@ -1,3 +1,5 @@
+[![Known Vulnerabilities](https://snyk.io/test/github/stfanmichel/ESIR-TP1/badge.svg)](https://snyk.io/test/github/stfanmichel/ESIR-TP1)
+
 # ESIR-TP1 - Prise en main
 
 ## Objectifs :
